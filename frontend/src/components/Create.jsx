@@ -29,6 +29,7 @@ function Create({ onTodoAdded }) {
         placeholder="Enter Task"
         onChange={(e) => setTask(e.target.value)}
         value={task}
+        style={{ marginBottom: 5 }}
       />
       <button type="button" onClick={handleAdd}>
         Add
