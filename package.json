@@ -2,6 +2,7 @@
   "name": "todo-list",
   "version": "1.0.0",
   "description": "",
+  "proxy": "http://localhost:5000",
   "main": "index.js",
   "scripts": {
     "build": "cd backend && npm install  && cd ../frontend && npm install && npm run build",
@@ -11,5 +12,3 @@
   "author": "",
   "license": "ISC"
 }
-
-

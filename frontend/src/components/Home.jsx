@@ -14,7 +14,7 @@ function Home() {
 
   const fetchData = async () => {
     try {
-      const { data } = await axios.get("http://localhost:5000/api/task/");
+      const { data } = await axios.get("/api/task/");
       // console.log(data);
       setTodos(data);
     } catch (err) {
@@ -28,7 +28,7 @@ function Home() {
 
   const deleteHandler = async (id) => {
     // console.log(id);
-    await axios.delete(`http://localhost:5000/api/task/${id}`);
+    await axios.delete(`/api/task/${id}`);
     fetchData(); // instead of calling fetch again, force reload
     // location.reload(true); //not as smoot
   };

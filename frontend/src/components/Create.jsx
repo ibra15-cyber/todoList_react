@@ -11,7 +11,7 @@ function Create({ onTodoAdded }) {
         return;
       }
 
-      await axios.post("http://localhost:5000/api/task/add/", {
+      await axios.post("/api/task/add/", {
         task,
       });
       setTask("");
