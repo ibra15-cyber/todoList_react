@@ -14,11 +14,9 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 // app.use(cors());
-app.use(
-  cors({
-    origin: "https://todolist-itep.onrender.com/", // Replace with your frontend app URL
-  })
-);
+// app.use(cors({
+//   origin: 'https://todolist.edkad.com' // Replace with your frontend app URL
+// }));
 
 app.use(express.static(path.join(__dirname, "dist")));
 
